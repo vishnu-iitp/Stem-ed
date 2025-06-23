@@ -1,192 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-bs-theme="light" lang="en" style="margin: 0px;">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>STEM-ed Workshop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #0ff;
-      color: #000;
-      text-align: center;
-      padding: 40px 20px;
-      font-family: 'Orbitron', sans-serif;
-      border-bottom: 5px solid #0ff;
-      position: relative;
-    }
-    header h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    .register-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: #000;
-      color: #0ff;
-      padding: 10px 20px;
-      border: 2px solid #0ff;
-      border-radius: 8px;
-      text-decoration: none;
-      font-family: 'Orbitron', sans-serif;
-      transition: background 0.3s, color 0.3s;
-    }
-    .register-button:hover {
-      background: #0ff;
-      color: #000;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      margin-top: 20px;
-      box-shadow: 0 0 15px rgba(0,255,255,0.2);
-    }
-    h2.section-title {
-      text-align: center;
-      font-family: 'Orbitron', sans-serif;
-      border-bottom: 2px dashed #0ff;
-      padding-bottom: 10px;
-      color: #00ffff;
-    }
-    .content-block {
-      margin-top: 30px;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.2);
-      border-left: 5px solid #0ff;
-      border-radius: 10px;
-    }
-    .content-block strong {
-      font-size: 1.2em;
-      color: #0ff;
-      display: block;
-      margin-bottom: 10px;
-    }
-    ul {
-      margin-left: 20px;
-    }
-    ul li {
-      margin-bottom: 8px;
-    }
-    .options {
-      margin-top: 20px;
-      font-size: 1.1em;
-      background: rgba(0, 0, 0, 0.2);
-      padding: 20px;
-      border-radius: 10px;
-      border-left: 5px solid #0ff;
-    }
-    p, li {
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 <body>
-  <header>
-    <a class="register-button" href="https://forms.gle/jgfGtreFsefy1Zmf9" target="_blank">Register Now</a>
-    <h1>STEM-ed Workshop</h1>
-    <p>Robotics & Electronics - Learn. Build. Innovate.</p>
-  </header>
 
-  <section>
-    <h2 class="section-title">7-Day Workshop Breakdown</h2>
-    <div class="content-block">
-      <strong>Day 1: Introduction to Robotics and Electronics</strong>
-      <ul>
-        <li>Topics: Basics of Voltage, Current, Resistance; DC vs. AC</li>
-        <li>Activities: Build a basic LED + resistor circuit on a breadboard</li>
-        <li>Outcomes: Understand simple circuits and key electronics concepts</li>
+<nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar" style="backdrop-filter: saturate(99%);-webkit-backdrop-filter: saturate(99%);transition: ease-in-out;">
+  <div class="container">
+    <a class="navbar-brand logo" href="index.html" style="opacity: 0.68;filter: brightness(95%);">
+      <img src="assets/img/STEM-ed%20-%20Copy%20copy.png" width="73" height="36" style="margin-left: -37px;margin-bottom: -26px;margin-top: -44px;">
+    </a>
+    <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+      <span class="visually-hidden">Toggle navigation</span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navcol-1">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active fw-bold" href="Registration.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link active" href="/benefits.html">Benefits</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact-us.html">Book Now</a></li>
       </ul>
     </div>
-    <div class="content-block">
-      <strong>Day 2: Components and Sensors</strong>
-      <ul>
-        <li>Topics: Resistors, LEDs, Relays, IR and Ultrasonic Sensors</li>
-        <li>Activities: Control a lamp using a relay; IR sensor obstacle detection</li>
-        <li>Outcomes: Interface electronic components and read sensor input</li>
-      </ul>
-    </div>
-    <div class="content-block">
-      <strong>Day 3: Getting Started with ESP32</strong>
-      <ul>
-        <li>Topics: ESP32 pinout, boot/reset, IDE setup</li>
-        <li>Activities: Blink LED sketch; Host a simple web server</li>
-        <li>Outcomes: Configure ESP32 and interact through a browser</li>
-      </ul>
-    </div>
-    <div class="content-block">
-      <strong>Day 4: Motor Control with PWM</strong>
-      <ul>
-        <li>Topics: H-Bridge motor drivers, PWM basics</li>
-        <li>Activities: DC motor speed/direction control; Servo sweeping</li>
-        <li>Outcomes: Use PWM for motor control and servo positioning</li>
-      </ul>
-    </div>
-    <div class="content-block">
-      <strong>Day 5: Wireless Communication with ESP32</strong>
-      <ul>
-        <li>Topics: Bluetooth Low Energy (BLE), REST APIs</li>
-        <li>Activities: Use a mobile app to toggle an LED; Send HTTP JSON commands</li>
-        <li>Outcomes: Enable BLE and Wi-Fi based device control</li>
-      </ul>
-    </div>
-    <div class="content-block">
-      <strong>Day 6: Capstone Project 1 – Bluetooth Car</strong>
-      <ul>
-        <li>Activities: Assemble hardware; Upload and debug control code</li>
-        <li>Focus: Chassis design, steering mechanics, BLE firmware</li>
-        <li>Outcomes: Fully functional BLE-controlled robotic car</li>
-      </ul>
-    </div>
-    <div class="content-block">
-      <strong>Day 7: Capstone Project 2 – Smart Home Automation</strong>
-      <ul>
-        <li>Activities: Build a two-channel smart switch; Enable voice control</li>
-        <li>Focus: Cloud connectivity with Google Home/Alexa</li>
-        <li>Outcomes: Working home automation system with voice commands</li>
-      </ul>
-    </div>
+  </div>
+</nav>
+
+<main class="page" style="padding-top: 90px;">
+  <!-- Register Here Button -->
+  <section class="text-center my-4">
+    <a href="https://forms.gle/jgfGtreFsefy1Zmf9" target="_blank" class="btn btn-primary btn-lg" style="padding: 12px 30px; font-size: 1.2rem;">
+      Register Here
+    </a>
   </section>
 
-  <section>
-    <h2 class="section-title">Alternate 5-Day Workshop</h2>
-    <div class="options">
-      <p><strong>Day 1:</strong> Introduction to Robotics & Electronics Basics<br>
-      <strong>Day 2:</strong> Sensors, Components & Introduction to ESP32<br>
-      <strong>Day 3:</strong> Motor Control & PWM with ESP32<br>
-      <strong>Day 4:</strong> Wireless Communication (Bluetooth & Wi-Fi) with ESP32<br>
-      <strong>Day 5:</strong> Capstone Projects – Bluetooth Car & Smart Home Automation</p>
+  <!-- Services Section with Images -->
+  <section class="clean-block clean-services dark">
+    <div class="container">
+      <div class="block-heading text-center">
+        <img src="assets/img/page04_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Workshop Content & Activities">
+        <img src="assets/img/page05_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Day by Day Breakdown">
+        <img src="assets/img/page06_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Duration & Schedule">
+        <img src="assets/img/page07_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Who Can Join & Resources">
+      </div>
     </div>
   </section>
+</main>
 
-  <section>
-    <h2 class="section-title">Who Can Join?</h2>
-    <p>This workshop is designed for students from Class 7 to Class 12. The content is tailored to be understandable and engaging for all levels, with separate attention and support for different age groups when necessary.</p>
-  </section>
+<footer class="page-footer dark mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h5>Get started</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="Registration.html">Sign up</a></li>
+          <li><a href="Registration.html">Syllabus</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>About us</h5>
+        <ul>
+          <li><a href="about-us.html">Company Information</a></li>
+          <li><a href="contact-us.html">Contact us</a></li>
+          <li><a href="gallery.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="Registration.html">FAQ</a></li>
+          <li><a href="contact-us.html">Help desk</a></li>
+          <li><a href="contact-us.html">Forums</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>© 2025 Copyright STEMed</p>
+  </div>
+</footer>
 
-  <section>
-    <h2 class="section-title">Resources (If Any Needed)</h2>
-    <p>We will bring most of the required materials. However, we request the school to provide:</p>
-    <ul>
-      <li>A classroom</li>
-      <li>Projector or smart board</li>
-    </ul>
-    <p>All other hardware (Arduino kits, sensors, laptops, etc.) will be provided by our team during the session.</p>
-  </section>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/script.min.js"></script>
 
 </body>
 </html>

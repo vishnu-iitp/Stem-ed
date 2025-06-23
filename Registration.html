@@ -1,27 +1,69 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" style="margin: 0px;">
+<html data-bs-theme="light" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>STEM-ed Workshop</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/styles.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #f8f9fa;
+    }
+    .navbar, .page-footer {
+      background-color: #111;
+    }
+    .navbar-nav .nav-link, .footer-copyright p {
+      color: #f8f9fa !important;
+    }
+    h2, h5 {
+      color: #00d9ff;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .section-box {
+      background-color: #1c1c1c;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "\f111";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 8px;
+      color: #00d9ff;
+    }
+  </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top bg-body clean-navbar" style="backdrop-filter: saturate(99%);-webkit-backdrop-filter: saturate(99%);transition: ease-in-out;">
+<nav class="navbar navbar-expand-lg fixed-top clean-navbar">
   <div class="container">
-    <a class="navbar-brand logo" href="index.html" style="opacity: 0.68;filter: brightness(95%);">
-      <img src="assets/img/STEM-ed%20-%20Copy%20copy.png" width="73" height="36" style="margin-left: -37px;margin-bottom: -26px;margin-top: -44px;">
+    <a class="navbar-brand logo" href="index.html">
+      <img src="assets/img/STEM-ed%20-%20Copy%20copy.png" width="73" height="36">
     </a>
     <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
-      <span class="visually-hidden">Toggle navigation</span>
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navcol-1">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active fw-bold" href="Registration.html">Registration</a></li>
-        <li class="nav-item"><a class="nav-link active" href="/benefits.html">Benefits</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="Registration.html">Registration</a></li>
+        <li class="nav-item"><a class="nav-link" href="/benefits.html">Benefits</a></li>
         <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
         <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
         <li class="nav-item"><a class="nav-link" href="/contact-us.html">Book Now</a></li>
@@ -31,22 +73,68 @@
 </nav>
 
 <main class="page" style="padding-top: 90px;">
-  <!-- Register Here Button -->
   <section class="text-center my-4">
-    <a href="https://forms.gle/jgfGtreFsefy1Zmf9" target="_blank" class="btn btn-primary btn-lg" style="padding: 12px 30px; font-size: 1.2rem;">
-      Register Here
+    <a href="https://forms.gle/jgfGtreFsefy1Zmf9" target="_blank" class="btn btn-primary btn-lg">
+      <i class="fas fa-robot me-2"></i>Register Here
     </a>
   </section>
 
-  <!-- Services Section with Images -->
-  <section class="clean-block clean-services dark">
-    <div class="container">
-      <div class="block-heading text-center">
-        <img src="assets/img/page04_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Workshop Content & Activities">
-        <img src="assets/img/page05_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Day by Day Breakdown">
-        <img src="assets/img/page06_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Duration & Schedule">
-        <img src="assets/img/page07_1.jpg" class="img-fluid rounded shadow mb-4" style="max-width: 100%; height: auto; transform: scale(1.05);" alt="Who Can Join & Resources">
-      </div>
+  <section class="container">
+    <div class="section-box">
+      <h2>Day 1: Introduction to Robotics and Electronics</h2>
+      <ul>
+        <li>Basics of Voltage, Current, Resistance; DC vs. AC</li>
+        <li>Activity: Build an LED + resistor circuit</li>
+        <li>Outcome: Understand simple circuits and key concepts</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h2>Day 2: Components and Sensors</h2>
+      <ul>
+        <li>Resistors, LEDs, Relays, IR and Ultrasonic Sensors</li>
+        <li>Activity: Control lamp using relay; IR sensor detection</li>
+        <li>Outcome: Interface sensors and read input</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h2>Day 3: Getting Started with ESP32</h2>
+      <ul>
+        <li>ESP32 pinout, boot/reset, IDE setup</li>
+        <li>Activity: Blink LED; host web server</li>
+        <li>Outcome: Configure ESP32 and connect via browser</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h2>Day 4: Motor Control with PWM</h2>
+      <ul>
+        <li>H-Bridge drivers, PWM basics</li>
+        <li>Activity: DC motor direction control; Servo sweeping</li>
+        <li>Outcome: Motor/servo control using PWM</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h2>Day 5: Wireless Communication with ESP32</h2>
+      <ul>
+        <li>Bluetooth Low Energy (BLE), REST APIs</li>
+        <li>Activity: Mobile app to toggle LED; HTTP/JSON control</li>
+        <li>Outcome: BLE/Wi-Fi based control</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h2>Day 6: Capstone Project – Bluetooth Car</h2>
+      <ul>
+        <li>Assemble car; Upload debug code</li>
+        <li>Focus: Chassis, steering, BLE firmware</li>
+        <li>Outcome: Working robotic BLE car</li>
+      </ul>
+    </div>
+    <div class="section-box">
+      <h2>Day 7: Capstone Project – Smart Home Automation</h2>
+      <ul>
+        <li>Build 2-channel smart switch with voice control</li>
+        <li>Cloud connectivity with Google Home/Alexa</li>
+        <li>Outcome: Voice-controlled home automation</li>
+      </ul>
     </div>
   </section>
 </main>
@@ -88,14 +176,12 @@
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
+  <div class="text-center mt-3">
     <p>© 2025 Copyright STEMed</p>
   </div>
 </footer>
 
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/script.min.js"></script>
-
 </body>
 </html>
-
